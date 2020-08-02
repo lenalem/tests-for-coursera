@@ -1,42 +1,67 @@
 body {
-    margin: 10px;
+    margin: 0;
     font-family: 'Sora', sans-serif;
     font-size: 15px;
     color: rgb(0, 0, 0);
 }
 
-.title {
+.container {
+    margin: 0;
+}
+
+#header-nav {
+    background-color: slategrey;
+    border-radius: 0;
+    border: 0;
+}
+
+#nav-list a {
     text-align: center;
+}
+
+.navbar-brand {
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+#header-nav button.navbar-toggle, #header-nav .icon-bar {
+    border: 1px solid rgb(53, 49, 49);
+}
+
+#header-nav button.navbar-toggle {
+    clear: both;
+}
+
+#nav-list a {
+    color: rgb(5, 5, 5);
+}
+
+#collapsable-nav a {
+    font-size: 20px;
+    background-color: rgb(242, 245, 206);
+    border: 1px solid black;
+}
+
+.col-xs-12 {
+    height: 1000px;
+}
+
+.navbar-title {
+    margin: 0;
+    color: rgb(230, 225, 168);
 }
 
 
 .content-title {
     margin: 0px;
-    border: 1px solid black;
+    
     font-size: 1.5em;
     text-align: center;
     color: rgb(29, 24, 24);
-    width: 35%;
-    
-    position: absolute;
-    top: -3px;
-    right: -3px;
-    box-sizing: border-box;
-}
-
-#title-chicken {
-    background-color: rgb(240, 140, 140);
-}
-
-#title-beef {
-    color: rgb(0, 0, 0);
-    background-color: rgb(178, 237, 252);
-}
-
-#title-sushi {
-    background-color: lightgreen;
-    font-size: 20px;
-    width: 50%;
 }
 
 .content {
@@ -44,7 +69,6 @@ body {
     padding: 10px;
     background-color: rgb(230, 225, 168);
     border: 1.5px solid black;
-    height: 180px;
     box-sizing: border-box;
     overflow: hidden;
     float: left;
@@ -59,30 +83,3 @@ body {
 
 
 
-@media (min-width: 992px) {
-    #chicken-content, #beef-content, #sushi-content {
-        width: 28%;
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    #chicken-content, #beef-content {
-        width: 40%;
-        height: 210px;
-    }
-
-    #sushi-content {
-        width: 90%;
-        height: 250px;
-    }
-
-}
-
-@media (max-width: 767px) {
-    .content {
-        width: 90%;
-        height: 150px;
-    }
-
-}
